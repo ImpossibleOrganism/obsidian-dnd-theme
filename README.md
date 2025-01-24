@@ -1,4 +1,9 @@
-This is a sample theme for Obsidian ([https://obsidian.md](https://obsidian.md/)).
+This is Eni's D&D theme for Obsidian ([https://obsidian.md](https://obsidian.md/)).
+
+## TODO
+
+- I want to make custom callouts.
+
 
 ## First Time publishing a theme?
 
