@@ -91,34 +91,40 @@ body {
     --font-text-theme: 'Roboto', 'Helvetica', sans-serif;
 
     /* --- Headers --- */
-    /* These are ripped from D&DBeyond;
-       The default text size on D&DBeyond is 16px, but I increase mine,
-       and I want everything else to scale. */
+    /* These are ripped from D&DBeyond and converted from px to em. */
+    /* The heading line heights are 41.6px, 36.4px, 31.2px, and 26px, 
+       which are all 1.3x the font size of the header, but they look
+       too small in Obsidian, so I bumpbed them to 1.5x */
 
-    --h1-line-height: calc(var(--font-text-size) * 41.6 / 16);
+    --heading-line-height: 1.5em;  /* This is apparently Obsidian's default */
+
+    --h1-line-height: var(--heading-line-height);
     --h1-weight: normal;
-    --h1-size: calc(var(--font-text-size) * 32 / 16);
+    --h1-size: 2em;
 
-    --h2-line-height: calc(var(--font-text-size) * 36.4 / 16);
+    --h2-line-height: var(--heading-line-height);
     --h2-weight: normal;
-    --h2-size: calc(var(--font-text-size) * 28 / 16);
+    --h2-size: 1.75em;
 
-    --h3-line-height: calc(var(--font-text-size) * 31.2 / 16);
+    --h3-line-height: var(--heading-line-height);
     --h3-weight: normal;
-    --h3-size: calc(var(--font-text-size) * 24 / 16);
+    --h3-size: 1.5em;
 
-    --h4-line-height: calc(var(--font-text-size) * 26 / 16);
+    --h4-line-height: var(--heading-line-height);
     --h4-weight: bold;
-    --h4-size: calc(var(--font-text-size) * 20 / 16);
+    --h4-size: 1.25em;
 
+    --h5-line-height: var(--heading-line-height);
     --h5-weight: bold;
-    --h5-size: calc(var(--font-text-size) * 18 / 16);
+    --h5-size: 1.125em;
 
+    --h6-line-height: var(--heading-line-height);
     --h6-weight: bold;
-    --h6-size: var(--font-text-size);
+    --h6-size: 1em;
 }
 
 /* Header Styling */
+/* TODO: Bottom margins */
 h1, .markdown-rendered h1, .HyperMD-header-1, .HyperMD-list-line .cm-header-1,
 h2, .markdown-rendered h2, .HyperMD-header-2, .HyperMD-list-line .cm-header-2,
 h3, .markdown-rendered h3, .HyperMD-header-3, .HyperMD-list-line .cm-header-3  {
@@ -127,15 +133,15 @@ h3, .markdown-rendered h3, .HyperMD-header-3, .HyperMD-list-line .cm-header-3  {
 }
 
 h1, .markdown-rendered h1, .HyperMD-header-1, .HyperMD-list-line .cm-header-1 {
-    border-bottom-width: 3px;
+    border-bottom-width: 4px;
 }
 
 h2, .markdown-rendered h2, .HyperMD-header-2, .HyperMD-list-line .cm-header-2 {
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
 }
 
 h3, .markdown-rendered h3, .HyperMD-header-3, .HyperMD-list-line .cm-header-3 {
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
 }
 
 
@@ -156,27 +162,4 @@ h3, .markdown-rendered h3, .HyperMD-header-3, .HyperMD-list-line .cm-header-3 {
 
 
 /* --- Other ---------------------------------------------------------------- */
-/*
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-    display: none;
-}
-
-svg * {
-    stroke-linecap: square;
-    stroke-linejoin: miter;
-    rx: 0;
-    ry: 0;
-}
-
-.menu {
-    padding: var(--size-2-1);
-}
-
-.menu-item {
-    padding: var(--size-4-1) var(--size-4-2);
-}
-
-.menu-separator {
-    margin: var(--size-2-1) calc(var(--size-2-1) * -1);
-}
-*/
+/* Just us chickens here. */
